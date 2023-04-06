@@ -1,0 +1,28 @@
+@use "../global" as g;
+$default_button_height: 3rem;
+$default_button_width: 12rem;
+.btn {
+    font-size: g.$fs12;
+    font-weight: bold;
+    display: flex;
+    min-width: $default_button_width;
+    min-height: $default_button_height;
+    padding: 0 g.$narrow;
+    cursor: pointer;
+    transition: g.$transition;
+    color: g.$white;
+    border-radius: g.$radius;
+    align-items: center;
+    justify-content: center;
+    background-color: #e9e9e9;
+    &:hover {
+        opacity: g.$opacity;
+    }
+    &.is-active {
+        color: g.$white;
+        background: g.$navy;
+    }
+    &.is-disable {
+        cursor: default;
+    }
+}
