@@ -27,4 +27,5 @@ body {
     @include g.tabletS {
         font-size: g.$fs14;
     }
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
