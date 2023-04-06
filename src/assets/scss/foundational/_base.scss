@@ -1,3 +1,4 @@
+@use "../global" as g;
 * {
     margin: 0;
     padding: 0;
@@ -8,4 +9,22 @@
 *:after,
 *:before {
     box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    height: 100%;
+    @include g.mobileS {
+        font-size: calc(1vw * 1000 / 360);
+    }
+}
+body {
+    font-size: g.$fs16;
+    line-height: 1.6;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+    -webkit-text-size-adjust: 100%;
+    @include g.tabletS {
+        font-size: g.$fs14;
+    }
 }
