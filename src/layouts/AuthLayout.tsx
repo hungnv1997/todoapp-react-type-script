@@ -7,7 +7,7 @@ const AuthLayout: React.FunctionComponent<Props> = (props: Props) => {
   const [first, setfirst] = useState("aaaaa");
   return (
     <>
-      <header>Head</header>
+      <header id="head">Head</header>
       <div id="page-content-wrapper">{props.children}</div>
     </>
   );
