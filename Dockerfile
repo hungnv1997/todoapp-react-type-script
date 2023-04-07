@@ -17,7 +17,7 @@ RUN yarn install
 COPY . .
 ## EXPOSE [Port you mentioned in the vite.config file]
 # Build the app with Vite
-RUN yarn build
+CMD [ "yarn", "build" ]
 
 #Stage 2
 #######################################
