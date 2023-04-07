@@ -24,6 +24,7 @@ body {
     overflow-y: scroll;
     width: 100%;
     -webkit-text-size-adjust: 100%;
+    background-color: g.$f4f4f4;
     @include g.tabletS {
         font-size: g.$fs14;
     }

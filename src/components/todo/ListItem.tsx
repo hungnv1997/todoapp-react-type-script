@@ -8,11 +8,11 @@ type Props = {
 
 function ListItem({ todosList }: Props) {
   return (
-    <div>
+    <>
       {todosList.map((todos) => (
         <TodoItem key={todos.id} todoItem={todos} />
       ))}
-    </div>
+    </>
   );
 }
 

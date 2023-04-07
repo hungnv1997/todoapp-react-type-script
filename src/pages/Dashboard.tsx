@@ -25,9 +25,12 @@ function Dashboard({}: Props) {
     ref!.current!.value = "";
   };
   return (
-    <div>
-      <Input ref={ref} />
-      <Button name="Add task" isActive handleClickBtn={handleAddTodo} />
+    <div className="c-app">
+      <h1>Tasks</h1>
+      <div className="c-app__input">
+        <Input ref={ref} />
+        <Button name="Add task" isActive handleClickBtn={handleAddTodo} />
+      </div>
       <ListItem todosList={todos} />
     </div>
   );
