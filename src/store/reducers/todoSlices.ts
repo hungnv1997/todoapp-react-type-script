@@ -1,9 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-interface Todo {
-  id: number;
-  content: string;
-  isCompleted: boolean;
-}
+import { Todo } from "../../utils/types";
+
 interface Init {
   todos: Array<Todo>;
 }

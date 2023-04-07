@@ -1,10 +1,7 @@
 import React from "react";
 import TodoItem from "./TodoItem";
-interface Todo {
-  id: number;
-  content: string;
-  isCompleted: boolean;
-}
+import { Todo } from "../../utils/types";
+
 type Props = {
   todosList: Array<Todo>;
 };
